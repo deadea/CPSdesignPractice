@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Regular.eot');
+    src: url('./TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/TTLakes-Regular.woff') format('woff'),
+    url('./fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'TT Lakes';
+        src: url('./fonts/TTLakes-Medium.eot');
+        src: url('./fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/TTLakes-Medium.woff') format('woff'),
+        url('./fonts/TTLakes-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+        }
+
+
+        @font-face {
+            font-family: 'TT Lakes';
+            src: url('./fonts/TTLakes-Bold.eot');
+            src: url('./fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/TTLakes-Bold.woff') format('woff'),
+            url('./fonts/TTLakes-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            }    
+     
+ body {
+    background: #F8F8F8;
+ }         
+ .header {
+    background: #FFFFFF;
+ }
+ 
+ h1 {
+ font-family: 'TT Lakes', sans-serif;
+font-size: 28px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: -0.6000000238418579px;
+color: #1B1C21;
+ }
+
+ p {
+font-family: 'TT Lakes', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0.20000000298023224px;
+color: #1B1C21;
+
+ }
+/* сброс оформления для кнопки
+ -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  border-radius: 0; */
