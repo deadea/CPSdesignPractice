@@ -30,14 +30,40 @@
             }    
      
  body {
-    background: #F8F8F8;
- }         
+   background: #F8F8F8;
+   margin: 0px;
+font-family: 'TT Lakes', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0.20000000298023224px;
+color: #1B1C21;
+   
+ }        
  .header {
     background: #FFFFFF;
- }
+    height: 88px;
+     }
  
+ a {
+    outline: none;
+    text-decoration: none;
+      }
+ 
+.header__link {
+margin-top: 24px;
+margin-bottom: 24px;
+}
+
+.header__divider {
+    background-color: #EAEAEA;
+    height: 32px;
+    width: 2px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    }
+
  h1 {
- font-family: 'TT Lakes', sans-serif;
 font-size: 28px;
 font-weight: 700;
 line-height: 40px;
@@ -45,18 +71,68 @@ letter-spacing: -0.6000000238418579px;
 color: #1B1C21;
  }
 
- p {
-font-family: 'TT Lakes', sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0.20000000298023224px;
-color: #1B1C21;
+ .main-section__link {
+    height: 40px;
+    color: #7E7E82;
+    font-size: 16px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: baseline;
+    }
+    
+    .main-section__link:hover, .main-section__link:focus {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    
+    }
 
- }
 /* сброс оформления для кнопки
  -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border: 0;
   border-radius: 0; */
+
+  @media (width: 320px) {
+.body {
+width: 320px;
+}
+    .header__nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+         }
+
+   .main-section__divider {
+    background-color: #41F6D7;
+    height: 40px;
+    width: 4px;
+    margin-top: 24px;
+    margin-right: 12px;
+}
+
+.main-section {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.main-section__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    overflow-y: auto;
+        }
+
+
+         }
+
+
+  @media (min-width: 321px) and (max-width: 768px) {   }
+
+  @media (max-width: 1120px) { }
