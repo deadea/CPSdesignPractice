@@ -71,6 +71,21 @@ letter-spacing: -0.6000000238418579px;
 color: #1B1C21;
  }
 
+ .header__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+     }
+
+     .main-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+
  .main-section__link {
     height: 40px;
     color: #7E7E82;
@@ -85,52 +100,64 @@ color: #1B1C21;
     border: 2px solid #B8FFEC;
     
     }
+   
+    .main-section__divider {
+        background-color: #41F6D7;
+        height: 40px;
+        width: 4px;
+        margin-top: 24px;
+        margin-right: 12px;}
 
-/* сброс оформления для кнопки
- -webkit-appearance: none;
+    .main-section__navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        overflow-x: scroll;
+        overflow-y: auto;
+            }
+
+
+
+.button {
+    -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border: 0;
-  border-radius: 0; */
+  border-radius: 0;
+  background: none;
+  font-family: 'TT Lakes', sans-serif;
+font-size: 16px;
+font-weight: 500;
+}
+
+.main-section__button-container::before {
+    content: url("./images/readmoreicon.svg");
+
+}
+
+
 
   @media (width: 320px) {
 .body {
 width: 320px;
 }
-    .header__nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-         }
-
-   .main-section__divider {
-    background-color: #41F6D7;
-    height: 40px;
-    width: 4px;
-    margin-top: 24px;
-    margin-right: 12px;
+.main-section__text-container {
+   height: 90px; 
+   overflow-y: hidden;
 }
 
-.main-section {
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    
+.main-section__picture {
+    width: 320px;
 }
 
-.main-section__navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    overflow-x: scroll;
-    overflow-y: auto;
-        }
+}
 
 
-         }
+
+
+
+
+         
 
 
   @media (min-width: 321px) and (max-width: 768px) {   }
