@@ -1,70 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CPS Услуги и сервисы</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header class="header">
-<nav class="header__nav">
-    <a class="header__link"href="#">
-        <img src="./images/burger.svg" alt="меню" >
-      </a>
+      <nav class="header__nav">
+<div class="header__menu-block1">
 
-      <a class="header__link" href="#">
-      <img src="./images/Group-1.svg" alt="логотип CPS" width="96.54px" height="50.81px">
-    </a>
+        <a class="link header__link" href="#">
+          <img src="./images/burger.svg" alt="меню" />
+        </a>
+        <div class="header__divider1"></div>
+        <a class="link header__link" href="#">
+          <img
+            src="./images/Group-1.svg"
+            alt="логотип CPS"
+            width="96.54px"
+            height="50.81px"
+          />
+        </a>
+    </div>
 
-<div class="header__divider"></div>
+<div class="header__menu-block2">
 
-<a class="header__link" href="#">
-    <img src="./images/repair.svg" alt="оставить заявку">
-  </a>
+        <a class="link header__link hidden" href="#">
+            <img src="./images/call.svg" alt="заказать звонок" />
+          </a>
+          <a class="link header__link hidden" href="#">
+            <img src="./images/chat.svg" alt="обратная связь" />
+          </a>
+          <a class="link header__link hidden" href="#">
+            <img src="./images/profile.svg" alt="профиль" />
+          </a>
 
-  <a class="header__link" href="#">
-    <img src="./images/checkstatus.svg" alt="статус ремонта">
-  </a>
 
-</nav>
 
+
+
+
+        <div class="header__divider2"></div>
+
+        <a class="link header__link" href="#">
+          <img src="./images/repair.svg" alt="оставить заявку" />
+        </a>
+
+        <a class="link header__link" href="#">
+          <img src="./images/checkstatus.svg" alt="статус ремонта" />
+        </a>
+    </div>
+
+      </nav>
     </header>
 
-
     <main>
-       <section class="main-section">
+      <section class="main-section">
+        <div class="main-section__divider"></div>
+        <h1 class="main-section__title">Услуги и сервисы</h1>
+        <nav class="main-section__navigation">
+          <a class="link main-section__link" href="#">Ремонтируемые бренды</a>
+          <a class="link main-section__link" href="#">Ремонтируемые устройства</a>
+          <a class="link main-section__link" href="#">Цены на услуги</a>
+          <a class="link main-section__link" href="#">Адреса сервисных центров</a>
+          <a class="link main-section__link" href="#">Специальные цены</a>
+          <a class="link main-section__link" href="#">Отзывы</a>
+        </nav>
+<article class="main-section__about-us">
+        <div class="main-section__text-container">
+          <p class="main-section__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+          </p>
+          <p class="main-section__text">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+          </p>
+        </div>
+        <div class="main-section__button-container">
+          <button type="button" class="button main-section__button">
+            Читать далее
+          </button>
+        </div>
+        <img
+          class="main-section__picture"
+          src="./images/_MG_3223.jpg"
+          alt="табличка с логотипом компании в офисе"
+        />
 
-     <div class="main-section__divider"></div> 
-     <h1 class="main-section__title">Услуги и сервисы</h1>
-     <nav class="main-section__navigation">    
-        <a class="main-section__link" href="#">Ремонтируемые бренды</a>       
-        <a class="main-section__link" href="#">Ремонтируемые устройства</a>  
-        <a class="main-section__link" href="#">Цены на услуги</a> 
-        <a class="main-section__link" href="#">Адреса сервисных центров</a> 
-        <a class="main-section__link" href="#">Специальные цены</a> 
-        <a class="main-section__link" href="#">Отзывы</a> 
-     </nav>
-
-<div class="main-section__text-container">
-<p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у 
-    нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-<p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает 
-    большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-</div>
-<div class="main-section__button-container">
-<button type="button" class="button main-section__button">Читать далее</button>
-</div>
-<img class="main-section__picture"
-     src="./images/_MG_3223.jpg"
-     alt="табличка с логотипом компании в офисе">
-</section>
-
-
+    </article>    
+      </section>
     </main>
 
     <footer></footer>
-</body>
+  </body>
 </html>
