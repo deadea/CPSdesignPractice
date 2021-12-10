@@ -153,6 +153,13 @@ h1 {
 
 
 @media (width: 320px) {
+  .main-section__title-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
   
   .main-section__text-container {
     height: 100px;
@@ -216,7 +223,13 @@ h1 {
 }
 
 @media (width: 768px) {
-  
+  .main-section__title-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 
 
     .main-section__about-us {
@@ -283,14 +296,92 @@ h1 {
 @media (width: 1120px) {
   header {
     display: none;
-  }
+      }
+      .main-section {
+        margin-top: 20px;
+      }
+      
+      .main-section__divider {
+        width: 3px;
+          }
+
   .hidden.main-section__link {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     letter-spacing: 0.2px;
     color: #1B1C21;
-    vertical-align: center;
+    
+}
+
+.main-section__title-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  }
+
+.main-section__title {
+margin-left: 26px;
+ margin-right: auto;
+}
+.hidden.main-section__link:nth-of-type(1),
+.hidden.main-section__link:nth-of-type(2) {
+   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.hidden.main-section__link:nth-of-type(1) img,
+.hidden.main-section__link:nth-of-type(2) img {
+  margin-left: 8px;
+  margin-right: 32px;
+}
+
+.main-section__navigation {
+  margin-left: 34px;
+  margin-right: 37px;
+  flex-wrap: wrap;
+  }
+
+
+  
+.main-section__picture {
+    box-sizing: border-box;
+    width: 531.3px;
+    height: 307px;
+  margin-top: 16px;
+   padding: auto;
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin: 0 0 37px 0;
+  }
+
+  .main-section__text-container {
+    height: 160px;
+    width: 490px;
+    line-height: 20px;
+    margin-right: 36px;
+    margin-top: 20px;
+          
+}
+
+.main-section__about-us {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 383px;
+  margin-left: 26px;
+  margin-right: 28px;
+}
+
+.main-section__button-container {
+  margin-top: auto;
+  margin-bottom: 150px;
+  
 }
 
 }
