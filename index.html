@@ -10,99 +10,141 @@
   <body>
     <header class="header">
       <nav class="header__nav">
-        <div class="header__menu-block1">
-          <a class="link header__link" href="#">
-            <img src="./images/burger.svg" alt="меню" />
-          </a>
-          <div class="header__divider1"></div>
-          <a class="link header__link" href="#">
-            <img
-              src="./images/Group-1.svg"
-              alt="логотип CPS"
-              width="96.54px"
-              height="50.81px"
-            />
-          </a>
-        </div>
+        
+        <ul class="header__menu-block">
+          
+          <li>
+            <button type="button" class="button header__button">
+              <img src="./images/burger.svg" alt="меню" />
+            </button>
+          </li>
 
-        <div class="header__menu-block2">
-          <a class="link header__link hidden" href="#">
-            <img src="./images/call.svg" alt="заказать звонок" />
-          </a>
-          <a class="link header__link hidden" href="#">
-            <img src="./images/chat.svg" alt="обратная связь" />
-          </a>
-          <a class="link header__link hidden" href="#">
-            <img src="./images/profile.svg" alt="профиль" />
-          </a>
+          <li><div class="divider divider--hidden--mobile"></div></li>
 
-          <div class="header__divider2"></div>
+          <li>
+            <button type="button" class="button header__button">
+              <img
+                src="./images/Group-1.svg"
+                alt="логотип CPS"
+                width="96.55px"
+                height="50.81px"
+              />
+            </button>
+          </li>
+       
+        </ul>
+      
+        <ul class="header__menu-block">
+          <li>
+            <button
+              type="button"
+              class="button header__button button--hidden--mobile"
+            >
+              <img src="./images/call.svg" alt="заказать звонок" />
+            </button>
+          </li>
 
-          <a class="link header__link" href="#">
-            <img src="./images/repair.svg" alt="оставить заявку" />
-          </a>
+          <li>
+            <button
+              type="button"
+              class="button header__button button--hidden--mobile"
+            >
+              <img src="./images/chat.svg" alt="обратная связь" />
+            </button>
+          </li>
 
-          <a class="link header__link" href="#">
-            <img src="./images/checkstatus.svg" alt="статус ремонта" />
-          </a>
-        </div>
+          <li>
+            <button
+              type="button"
+              class="button header__button button--hidden--mobile">
+              <img src="./images/profile.svg" alt="профиль" />
+            </button>
+          </li>
+
+          <li><div class="divider"></div></li>
+
+          <li>
+            <button type="button" class="button header__button">
+              <img src="./images/repair.svg" alt="оставить заявку" />
+            </button>
+          </li>
+
+          <li>
+            <button type="button" class="button header__button">
+              <img src="./images/checkstatus.svg" alt="статус ремонта" />
+            </button>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <section class="main-section">
-        <div class="main-section__title-links">
-          <div class="main-section__divider"></div>
+        <div class="main-section__head">
+          <div class="divider divider--cyan"></div>
           <h1 class="main-section__title">Услуги и сервисы</h1>
 
-          <a class="link main-section__link hidden" href="#"
-            >Оставить заявку
-            <img src="./images/repair.svg" alt="оставить заявку" />
-          </a>
+          <button
+          type="button"
+          class="button main-section__button button--hidden--mobile-tablet">Оставить заявку
+          <img src="./images/repair.svg" alt="оставить заявку" />
+        </button>
 
-          <a class="link main-section__link hidden" href="#"
-            >Статус ремонта
-            <img src="./images/checkstatus.svg" alt="статус ремонта" />
-          </a>
-        </div>
+        <button
+        type="button"
+        class="button main-section__button button--hidden--mobile-tablet">Статус ремонта
+        <img src="./images/checkstatus.svg" alt="статус ремонта" />
+      </button>
+      </div>
 
         <nav class="main-section__navigation">
+          <ul>
+            <li>
           <a class="link main-section__link" href="#">Ремонтируемые бренды</a>
+        </li>
+        <li>
           <a class="link main-section__link" href="#"
-            >Ремонтируемые устройства</a
-          >
-          <a class="link main-section__link" href="#">Цены на услуги</a>
+            >Ремонтируемые устройства</a></li>
+            <li>
+          <a class="link main-section__link" href="#">Цены на услуги</a></li>
+          <li>
           <a class="link main-section__link" href="#"
-            >Адреса сервисных центров</a
-          >
-          <a class="link main-section__link" href="#">Специальные цены</a>
-          <a class="link main-section__link" href="#">Отзывы</a>
+            >Адреса сервисных центров</a> </li>
+            <li>
+          <a class="link main-section__link" href="#">Специальные цены</a></li>
+          <li>
+          <a class="link main-section__link" href="#">Отзывы</a></li>
+
+        </ul>
         </nav>
-        <article class="main-section__about-us">
+
+        
+        <div class="main-section__about-us">
           <div class="main-section__text-container">
             <p class="main-section__text">
               Мы являемся авторизованным сервисным центром по ремонту техники
               Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
               официальной гарантией производителя.
             </p>
-            <p class="main-section__text">
+            <p class="main-section__text main-section__text--hidden-mobile">
               Мы успешно работаем с 1992 года и заслужили репутацию надежного
               партнера, что подтверждает большое количество постоянных клиентов.
               Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
               очередь, советуют нас родным и близким.
             </p>
           </div>
-          <div class="main-section__button-container">
+          
             <button type="button" class="button main-section__button">
               Читать далее
             </button>
-          </div>
+          
+
           <img
             class="main-section__picture"
             src="./images/contentpic.jpg"
             alt="табличка с логотипом компании в офисе"
           />
-        </article>
+        </div>
       </section>
     </main>
 
