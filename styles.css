@@ -68,8 +68,7 @@ h1 {
   background-color: #eaeaea;
   height: 32px;
   width: 2px;
-  
-  }
+    }
 
 .divider--cyan {
   background-color: #41f6d7;
@@ -126,9 +125,6 @@ h1 {
 .header__menu-block:last-of-type   .header__button:last-of-type {
   margin-right: 0;
 }
-
-
-
 
 .main-section__button > img {
   vertical-align: middle;
@@ -195,7 +191,7 @@ h1 {
 
 
 .main-section__about-us {
-  margin: 0 auto;
+margin: 0 auto;
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
@@ -218,7 +214,7 @@ ul, li {
 
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /*добавить дисплей блок на остальных разреш или перенести это правило только в моб*/
+ 
 .divider--hidden--mobile {
   display: none;
   }
@@ -227,7 +223,7 @@ ul, li {
     display: none;
   }
 
-/* перенести в таблет и моб */
+
 .button--hidden--mobile-tablet {
   display: none;
 }
@@ -258,8 +254,8 @@ h1 {
 .main-section__text-container {
   padding-left: 16px;
   padding-right: 16px;
+  
 }
-
 
 
 
@@ -267,7 +263,7 @@ h1 {
 
 
 @media (min-width: 768px) and (max-width: 1119px) {
-  /* перенести в таблет и моб */
+
 .button--hidden--mobile-tablet {
   display: none;
 }
@@ -294,8 +290,54 @@ h1 {
     );
   }
 
+.header__menu-block:first-of-type > li:last-of-type {
+margin-left: 20px;
+}
 
-  
+.header__menu-block:nth-of-type(2) > li:nth-of-type(3) {
+  margin-right: 20px;
+}
+
+.main-section__navigation ul {
+  margin-left: 24px;
+}
+
+.main-section__text-container {
+  line-height: 19px;
+  width: 312px;
+  height: 160px;
+  overflow-y: hidden;
+  order: -1;
+  margin-left: auto;
+    }
+
+  .main-section__about-us {
+    max-width: 1119px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+
+   }
+
+   .main-section__picture {
+    width: 360px;
+    height: 208px;
+    border: 2px solid #f8f8f8;
+    border-radius: 6px;  
+     order: 0;
+     margin-left: 40px;
+     margin-right: auto;
+           }
+
+.main-section__button:last-of-type {
+  order: 1;
+  align-self: flex-start;
+  padding-right: 550px;
+ margin-left: auto;
+}
 
 
 }
@@ -312,6 +354,106 @@ h1 {
   h1 {
     margin-left: 30px;
       }
+
+body {
+  max-width: 1120px;
+}
+.main-section {
+  margin-top: 42px;
+}
+
+.main-section__head > .divider {
+  width: 3px;
+} 
+
+.main-section__head .main-section__button {
+  line-height: 24px;
+  font-weight: 500;
+  color: #1b1c21;
+  letter-spacing: 0.2px;
+}
+
+.main-section__head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.main-section__title {
+  margin-left: 26px;
+  margin-right: auto;
+}
+
+.main-section__head .main-section__button {
+  margin-right: 32px;
+    }
+    .main-section__head .main-section__button img {
+      margin-left: 8px;
+        }
+
+        .main-section__navigation {
+          padding-left: 36px;
+          padding-right: 37px;
+          margin-top: 15px;
+          }
+      
+
+
+.main-section__navigation ul {
+line-height: 24px;
+margin-left: 16px;
+flex-wrap: wrap;
+
+
+    }
+
+.main-section__navigation .main-section__link {
+ font-size: 16px;
+ text-align: center;
+vertical-align: middle;
+height: 24px;
+padding: 3px;
+
+}
+
+
+
+.main-section__picture {
+  width: 531.3px;
+  height: 307px;
+  border: 2px solid #f8f8f8;
+  border-radius: 6px;  
+   order: 0;
+   margin-left: 36px;
+   margin-right: auto;
+         }
+
+  .main-section__text-container {
+    line-height: 20px;
+    width: 490px;
+    height: 160px;
+    order: -1;
+    margin-left: auto;
+    margin-top: 20px;
+      }
+
+      .main-section__about-us {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding-left: 34px;
+        padding-right: 28px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+        
+       }
+
+  .main-section__about-us > .main-section__button {
+    order: 1;
+    align-self: flex-start;
+    padding-right: 850px;
+   margin-left: auto;
+  }
 
 
 
