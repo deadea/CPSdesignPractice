@@ -28,9 +28,18 @@
   font-style: normal;
 }
 
+body,
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   background: #f8f8f8;
-  margin: 0px;
+  margin: 0px autp;
   font-family: "TT Lakes", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -45,15 +54,16 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
-  }
+}
 
 .menu-header {
   height: 88px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  padding: 23px 24px;
 }
 
 .link {
@@ -62,29 +72,33 @@ body {
   color: #1b1c21;
 }
 
-.menu-header__link {
-  padding-left: 23px;
-}
-
-.menu-header__link:last-of-type {
-  margin-left: 55px;
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+  font-family: "TT Lakes", sans-serif;
 }
 
 .menu-main__list {
   list-style: none;
   padding-left: 4px;
-  margin-bottom: auto; /*ПРОВЕРИТЬ РАЗМЕР*/
+  margin-bottom: auto;
 }
 
 .menu-main__list li {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .menu-main__link {
   padding-left: 20px;
   padding-top: 4px;
   padding-bottom: 4px;
-  opacity:1;
+  opacity: 1;
   transition-property: opacity;
   transition-duration: 1s;
   transition-timing-function: ease;
@@ -95,60 +109,61 @@ body {
   border-left: 4px solid #41f6d7;
   box-sizing: border-box;
   margin-left: -4px;
-  opacity:0.33;
+  opacity: 0.33;
 }
 
 .menu-footer__icons {
-    margin-bottom: 16px;
-    margin-left: 8px;
-    margin-top: auto;
-    position: fixed;
-    left: 0px;
-    bottom: 180px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  margin-top: auto;
+  position: fixed;
+  left: 0px;
+  bottom: 180px;
 }
 
-.menu-footer__icons > .menu-footer__link {
-padding-left: 16px;
+.menu-footer__icons > .menu-footer__button {
+  padding-left: 16px;
 }
 
 .menu-footer__contacts {
-    display: block;
-     margin-left: 24px;
-     position: fixed;
-     bottom: 96px;
-     left: 0px;
-        }
+  display: block;
+  margin-left: 24px;
+  position: fixed;
+  bottom: 96px;
+  left: 0px;
+}
 
-        .menu-footer__contacts > .menu-footer__link:first-child {
-            display: block;
-            margin-bottom: 12px;
-        }
-            
- .menu-footer__contacts > .menu-footer__link:last-child {
-     font-size: 24px;
-     line-height: 32px;
-     font-weight: 700;
-     display: block;
- }    
+.menu-footer__contacts > .menu-footer__button:first-child {
+  display: block;
+  margin-bottom: 12px;
+}
 
-    .menu-footer__lang-switch {
-        margin-bottom: 32px; 
-        margin-top: 40px; 
-        margin-left: 24px;
-        text-transform: uppercase;
+.menu-footer__contacts > .menu-footer__link:last-child {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  display: block;
+}
+
+.menu-footer__lang-switch {
+  margin-bottom: 32px;
+  margin-top: 40px;
+  margin-left: 24px;
+
   position: fixed;
   bottom: 0px;
   left: 0px;
-    }
+}
 
-    .menu-footer__lang {
-    opacity:1;
-    transition-property: opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-  }
-  
-  .menu-footer__lang:hover,
-  .menu-footer__lang:active {
-      opacity:0.33;
-  }
+.menu-footer__lang {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  text-transform: uppercase;
+}
+
+.menu-footer__lang:hover,
+.menu-footer__lang:active {
+  opacity: 0.33;
+}
