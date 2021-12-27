@@ -38,8 +38,8 @@ body,
 }
 
 body {
-  background: #f8f8f8;
-  margin: 0px autp;
+  background: #F2F2F2;
+  margin: 0px auto;
   font-family: "TT Lakes", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -54,6 +54,10 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+  inset -2px 0 4px rgba(69, 79, 126, 0.02);
+ 
+  
 }
 
 .menu-header {
