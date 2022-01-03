@@ -46,6 +46,7 @@ body {
   line-height: 18px;
   letter-spacing: 0.2px;
   color: #1b1c21;
+  min-width: 320px;
 }
 
 h1 {
@@ -195,7 +196,7 @@ margin: 0 auto;
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
- justify-content: flex-start;
+ justify-content: center;
 }
 
 
@@ -256,7 +257,10 @@ h1 {
   padding-right: 16px;
   
 }
+.main-section__about-us {
+margin: 0 auto;
 
+}
 
 
 }
@@ -307,9 +311,7 @@ margin-left: 20px;
   width: 312px;
   height: 160px;
   overflow-y: hidden;
-  order: -1;
-  margin-left: auto;
-    }
+      }
 
   .main-section__about-us {
     max-width: 1119px;
@@ -327,16 +329,13 @@ margin-left: 20px;
     height: 208px;
     border: 2px solid #f8f8f8;
     border-radius: 6px;  
-     order: 0;
-     margin-left: 40px;
-     margin-right: auto;
+    margin-top: 0px;
+    margin-left: 40px;
+    
            }
 
 .main-section__button:last-of-type {
-  order: 1;
-  align-self: flex-start;
-  padding-right: 550px;
- margin-left: auto;
+ margin-top: 10px;
 }
 
 
@@ -387,6 +386,7 @@ body {
 .main-section__head .main-section__button {
   margin-right: 32px;
     }
+
     .main-section__head .main-section__button img {
       margin-left: 8px;
         }
@@ -423,17 +423,14 @@ padding: 3px;
   height: 307px;
   border: 2px solid #f8f8f8;
   border-radius: 6px;  
-   order: 0;
    margin-left: 36px;
-   margin-right: auto;
+   
          }
 
   .main-section__text-container {
     line-height: 20px;
     width: 490px;
     height: 160px;
-    order: -1;
-    margin-left: auto;
     margin-top: 20px;
       }
 
@@ -448,11 +445,12 @@ padding: 3px;
         
        }
 
-  .main-section__about-us > .main-section__button {
-    order: 1;
-    align-self: flex-start;
-    padding-right: 850px;
-   margin-left: auto;
+       .main-section__text--hidden-mobile {
+        margin-bottom: 0px;
+      }
+
+  .main-section__about-us  .main-section__button {
+       margin-top: 13.78px;
   }
 
 
